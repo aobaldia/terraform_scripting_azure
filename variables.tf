@@ -78,7 +78,7 @@ variable "account_replication_tier" {
 variable storage_account_name {
   type        = string
   description = "storage account name"
-  default     = "terraform<usuario>"
+  default     = "terraformalobaldia"
 }
 
 variable "storage_account_type" {
@@ -119,6 +119,36 @@ variable subnet_1_name {
 variable subnet_1_ipam {
   description = "subnet cidr range"
   default     = ["10.4.1.0/24"]
+}
+
+variable subnet_2_name {
+  description = "subnet name"
+  default     = "alobaldia-2"
+}
+
+variable subnet_2_ipam {
+  description = "subnet cidr range"
+  default     = ["10.4.2.0/24"]
+}
+
+variable subnet_3_name {
+  description = "subnet name"
+  default     = "alobaldia-3"
+}
+
+variable subnet_3_ipam {
+  description = "subnet cidr range"
+  default     = ["10.4.3.0/24"]
+}
+
+variable subnet_4_name {
+  description = "subnet name"
+  default     = "alobaldia-4"
+}
+
+variable subnet_4_ipam {
+  description = "subnet cidr range"
+  default     = ["10.4.4.0/24"]
 }
 
 variable key {
